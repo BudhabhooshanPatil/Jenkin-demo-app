@@ -28,7 +28,8 @@ node {
     archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
 }
 
-node {
+pipeline {
+    agent any
     stages {
         stage("Create build output") {
             steps {
