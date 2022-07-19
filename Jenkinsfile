@@ -14,5 +14,6 @@ node {
     stage "Run Fast file"
     
     // Run FastLane.
+    sh "cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions"
     sh "fastlane tests"
 }
