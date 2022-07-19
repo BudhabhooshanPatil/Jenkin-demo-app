@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1230"
+   LastUpgradeVersion = "1330"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EBB269E2700BD3500005BDA"
-               BuildableName = "jenkins-demo-app.app"
-               BlueprintName = "jenkins-demo-app"
-               ReferencedContainer = "container:jenkins-demo-app.xcodeproj">
+               BlueprintIdentifier = "99BED63B288730910012507A"
+               BuildableName = "FastlaneDemoApp.app"
+               BlueprintName = "FastlaneDemoApp"
+               ReferencedContainer = "container:FastlaneDemoApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "99BED65A28873B5F0012507A"
+               BuildableName = "FastlaneDemoAppTests.xctest"
+               BlueprintName = "FastlaneDemoAppTests"
+               ReferencedContainer = "container:FastlaneDemoApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -44,10 +54,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EBB269E2700BD3500005BDA"
-            BuildableName = "jenkins-demo-app.app"
-            BlueprintName = "jenkins-demo-app"
-            ReferencedContainer = "container:jenkins-demo-app.xcodeproj">
+            BlueprintIdentifier = "99BED63B288730910012507A"
+            BuildableName = "FastlaneDemoApp.app"
+            BlueprintName = "FastlaneDemoApp"
+            ReferencedContainer = "container:FastlaneDemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EBB269E2700BD3500005BDA"
-            BuildableName = "jenkins-demo-app.app"
-            BlueprintName = "jenkins-demo-app"
-            ReferencedContainer = "container:jenkins-demo-app.xcodeproj">
+            BlueprintIdentifier = "99BED63B288730910012507A"
+            BuildableName = "FastlaneDemoApp.app"
+            BlueprintName = "FastlaneDemoApp"
+            ReferencedContainer = "container:FastlaneDemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
