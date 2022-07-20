@@ -16,6 +16,6 @@ node {
     // Run FastLane.
     sh '''
     cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions
-    /usr/local/bin/ fastlane scan
+    /usr/local/bin/ fastlane tests
     '''
 }
