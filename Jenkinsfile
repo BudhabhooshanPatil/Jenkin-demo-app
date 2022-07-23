@@ -3,18 +3,27 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World!"
+                if (env.BRANCH_NAME == 'main') {
+                    echo "Hello World! from main"
+                } else {
+                    echo "Hello World! from feature branch"
+                }
             }
         }
     }
 }
 
-// // This shows a simple example of how to run a fastlane fastfile.
 // node {
-//     stage "Run Fast file"
-//     sh '''
-//     cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions
-//      export PATH="$PATH:/usr/local/bin:/usr/local/bin:/usr/local/sbin$:"
-//      fastlane scan
-//     '''
+//     stage('Run the main') {
+//         if (env.BRANCH_NAME == 'main') {
+//             echo 'I only execute on the main branch'
+//             sh '''
+//                 cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions
+//                 export PATH="$PATH:/usr/local/bin:/usr/local/bin:/usr/local/sbin$:"
+//                 fastlane scan
+//                 '''
+//         } else {
+//             echo 'I execute elsewhere'
+//         }
+//     }
 // }
