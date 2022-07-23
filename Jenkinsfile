@@ -7,6 +7,8 @@ pipeline {
                 sh '''
                     export PATH="$PATH:/usr/local/bin:/usr/local/bin:/usr/local/sbin$:"
                     fastlane scan
+                    pwd
+                    open fastlane/test_output/report.html
                    '''
             }
         }
