@@ -1,29 +1,28 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('start') {
             steps {
-                if (env.BRANCH_NAME == 'main') {
-                    echo "Hello World! from main"
-                } else {
-                    echo "Hello World! from feature branch"
-                }
+                echo "Running build"
+            }
+        }
+        stage('switch to project') {
+            steps {
+                sh 'cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions'
+                echo 'switched to repo'
+            }
+        }
+        stage('set path') {
+            steps {
+                sh 'export PATH="$PATH:/usr/local/bin:/usr/local/bin:/usr/local/sbin$:"'
+                echo 'done set-up path'
+            }
+        }
+
+        stage('execute fastlane') {
+            steps {
+                sh 'fastlane scan'
             }
         }
     }
 }
-
-// node {
-//     stage('Run the main') {
-//         if (env.BRANCH_NAME == 'main') {
-//             echo 'I only execute on the main branch'
-//             sh '''
-//                 cd /Users/bhooshanpatil/Desktop/SampleProject-TestCase-Executions
-//                 export PATH="$PATH:/usr/local/bin:/usr/local/bin:/usr/local/sbin$:"
-//                 fastlane scan
-//                 '''
-//         } else {
-//             echo 'I execute elsewhere'
-//         }
-//     }
-// }
